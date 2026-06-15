@@ -21,4 +21,6 @@ saaru.walk()"""
     def intro(self):
         print(f"Kunal is a {self.Bname} and Mahita is {self.Gname}")
 gender = Person("Male","Female")
+gender.Gname="Shree"  #changing the argument
 gender.intro()"""
+
