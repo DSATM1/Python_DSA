@@ -44,7 +44,7 @@ print(find_paper(papers,"Suman"))"""
 
 
 
-"""#O(n^2) using multiple looping conditions 
+"""#O(n^2)(n square) using multiple looping conditions 
 def find_dup(numbers):
     for i in range(len(numbers)):
         for j in range(len(numbers)):
@@ -54,3 +54,13 @@ def find_dup(numbers):
     return False
 numbers = [10,23,45,5,56]
 print(find_dup(numbers))"""
+
+
+"""#O(2^n) (2 to the power n) Worst case
+def fib(n):
+    if n < 2:
+        return n 
+    return fib(n -1) + fib(n - 2)
+if __name__ == "__main__":
+    for i in range(0,10):
+        print(i, fib(i))"""
