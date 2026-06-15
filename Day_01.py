@@ -5,7 +5,8 @@ lst = [23,43,54,65,76,87,98,100]
 print(lst[0])"""
 
 
-"""#O(log(n)) in this we should sort the list before printing otherwise it will return -1
+"""Binary Search Function"""
+"""#O(log(n)) in this we should sort the list before printing otherwise it will return -1 and it's faster than Linear
 def find_name(book, target):
     left = 0
     right = len(book) - 1
@@ -29,4 +30,15 @@ if res != -1:
 else:
     print("Not Found")"""
 
+
+
+"""#O(n) Slower compared to Binary but it does not need sorting  
+def find_paper(papers,name):
+    for paper in papers:
+        if paper == name:
+            return True 
+    return False
+papers = ["Lucky","Madan","Sure","Devid","Mallu"]
+print(find_paper(papers,"Devid"))
+print(find_paper(papers,"Suman"))"""
 
