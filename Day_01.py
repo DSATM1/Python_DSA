@@ -45,6 +45,8 @@ print(find_paper(papers,"Suman"))"""
 
 
 """#O(n^2)(n square) using multiple looping conditions 
+#for this Space Complexity will be O(n^2) bcz it using multiple conditions and repeated values 
+
 def find_dup(numbers):
     for i in range(len(numbers)):
         for j in range(len(numbers)):
@@ -64,3 +66,20 @@ def fib(n):
 if __name__ == "__main__":
     for i in range(0,10):
         print(i, fib(i))"""
+
+
+
+
+#Contains Duplicates &&&& LeetCode Problem ######
+#it sis faster do Time complexity will be O(n) and is usig sapce more then it will be O(n^2)
+"""def has_dup(num):
+    seen = set()
+    for n in num:
+        if n in seen:
+            return True
+        seen.add(n)
+    return False
+num = [10,20,50,30,40]
+print(has_dup(num))"""
+
+#Always Focus on Worst case bcz Engineer will do that not coders ok 
