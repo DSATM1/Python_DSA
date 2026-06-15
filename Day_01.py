@@ -42,3 +42,15 @@ papers = ["Lucky","Madan","Sure","Devid","Mallu"]
 print(find_paper(papers,"Devid"))
 print(find_paper(papers,"Suman"))"""
 
+
+
+"""#O(n^2) using multiple looping conditions 
+def find_dup(numbers):
+    for i in range(len(numbers)):
+        for j in range(len(numbers)):
+            if i != j and numbers[i] == numbers[j]:
+                return True 
+            
+    return False
+numbers = [10,23,45,5,56]
+print(find_dup(numbers))"""
