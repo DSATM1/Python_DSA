@@ -82,4 +82,4 @@ if __name__ == "__main__":
 num = [10,20,50,30,40]
 print(has_dup(num))"""
 
-#Always Focus on Worst case bcz Engineer will do that not coders ok 
+#Always Focus on Worst case bcz Engineer will do that not coders ok
