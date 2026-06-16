@@ -35,3 +35,18 @@ for i in range(0,n+1):
         print(counter, end = " ")
         counter += 1
     print()"""
+
+
+
+"""def positive(lst):
+    result = []
+    for i in lst:
+        if i > 0:
+            result.append(i)
+    return result      
+l = [-1,2,0,3,-2,-5,4,3,0]
+print(positive(l))
+
+# l = [-1,2,0,3,-2,-5,4,3,0]
+# Now i need only +ve num from l """
+
