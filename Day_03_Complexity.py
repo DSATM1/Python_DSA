@@ -36,3 +36,11 @@ for i in range(n*=2):
 while i <=n:
     print(n)
     n//=2"""
+
+"""# Space Complexity 
+# space taken by the list or array 
+n = 10
+m = 20 
+l1 = [0]
+for i in range(n):
+    l1.append(m)"""
