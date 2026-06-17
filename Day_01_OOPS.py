@@ -14,6 +14,8 @@ saaru = Human("Shree",19)
 saaru.walk()"""
 
 
+
+
 """class Person:
     def __init__(self,Boy,Girl):
         self.Bname=Boy
@@ -24,3 +26,55 @@ gender = Person("Male","Female")
 gender.Gname="Shree"  #changing the argument
 gender.intro()"""
 
+
+
+
+"""class ATM:
+    def __init__(self,balance):
+        self.balance = balance
+    def check_bal(self):
+        print(self.balance)
+sp = ATM(23000)
+###sp.balance = 20000  this is not private so use private attribute like "__" ex = __balance
+print(sp.balance)"""
+
+
+
+
+"""class Database:
+    def __init__(self):
+        self.__storage = {}
+
+    def save_data(self, key, value):
+        self.__storage[key] = value
+        print(f"Data saved for {key}")
+    
+    def get_data(self, key):
+        return self.__storage.get(key, "no data found")
+
+db = Database()
+db.save_data("us_01", {"name":"Raj","age":30})
+print(db.get_data("us_01"))"""
+
+
+
+
+"""class SQL:
+    def __init__(self):
+        #self.storage = {}
+        #self._storage = {}  
+        self.__storage = {}
+    
+    def wait(self, key, value):
+        self.__storage[key] = value
+        
+    def run(self ,key):
+        if key in self.__storage:
+            print(self.__storage[key])
+        else:
+            print("DB item not available")
+db = SQL()
+db.wait("Suraj","23")
+#db.run("Suraj")
+db.run("Suraj")
+#print(db.__storage)"""
