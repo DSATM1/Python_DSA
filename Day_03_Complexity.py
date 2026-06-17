@@ -15,3 +15,14 @@ for i in range(n+m):
 # In this case it dosen't depend on input the input will be constant 
 for i in range(100):
     print(i,end = " ")"""
+
+
+"""# Quadratic O(n^2) Multiple conditions 
+# And when u have O(n) or O(1) and O(n^2) then u can say like O(n^2) bcz the the one condition is big and one is small
+n = 5
+for i in range(n):
+    for j in range(n):
+        print(i,j, end = " ")
+
+for i in range(n):
+    print(i,end = " ")"""
