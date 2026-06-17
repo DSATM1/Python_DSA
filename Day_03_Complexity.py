@@ -26,3 +26,13 @@ for i in range(n):
 
 for i in range(n):
     print(i,end = " ")"""
+
+"""# Logerthm Time O(log n)
+# when u have multiplication and division then this will be applied 
+
+for i in range(n*=2):
+    print(i)
+
+while i <=n:
+    print(n)
+    n//=2"""
