@@ -17,3 +17,18 @@ a = Admin("Suraj")
 print(a.uname)
 a.delete_user()
 a.login()"""
+
+
+"""class Family:
+    def __init__(self,sur_name):
+        self.sur_name=sur_name
+    
+class Child(Family):
+    def __init__(self,sur_name,name):
+        super().__init__(sur_name)
+        self.name=name
+
+child = Child ("Pokale","Suraj")
+print(f"{child.name} {child.sur_name}")"""
+
+
