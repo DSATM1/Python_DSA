@@ -49,7 +49,7 @@ for a in ani:
     a.make_sound()"""
 
 
-
+#----Getters and Setters------
 
 """class Student:
     def __init__(self,name,age):
