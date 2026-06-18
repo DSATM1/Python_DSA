@@ -68,3 +68,24 @@ print(s.get_name())
 s.set_name("SP")
 
 print(s.get_name())"""
+
+
+"""from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+
+class Bike(Vehicle):
+    def __init__(self, name):
+        self.name = name
+
+    def start_engine(self):
+        print("Engine Started")
+
+b = Bike("Royal Enfield")
+
+print(b.name)
+
+b.start_engine()"""
