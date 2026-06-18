@@ -47,3 +47,24 @@ class Cat(Animal):
 ani = [Dog(),Cat()]
 for a in ani:
     a.make_sound()"""
+
+
+
+
+"""class Student:
+    def __init__(self,name,age):
+        self.__name=name
+        self.__age=age
+    def get_name(self):
+        return self.__name
+    
+    def set_name(self, name):
+        self.__name = name
+
+s = Student("Suraj",24)
+
+print(s.get_name())
+
+s.set_name("SP")
+
+print(s.get_name())"""
