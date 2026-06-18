@@ -32,3 +32,18 @@ child = Child ("Pokale","Suraj")
 print(f"{child.name} {child.sur_name}")"""
 
 
+"""class Animal:
+    def make_sound(self):
+        pass
+    
+class Dog(Animal):
+    def make_sound(self):
+        print("Bark")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow")
+
+ani = [Dog(),Cat()]
+for a in ani:
+    a.make_sound()"""
