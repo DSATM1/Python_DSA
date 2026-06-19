@@ -23,3 +23,13 @@ set1.discard("Age")
 
 set1.remove("SP")
 print(set1)"""
+
+"""set1 = {"Suraj",23,"Age",100,"Lucifer"}
+
+if "Sura" in set1:
+    print(True)
+else:
+    print(False)
+
+set1.clear()
+print(set1)"""
