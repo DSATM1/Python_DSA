@@ -114,3 +114,15 @@ print(dct1)"""
 
 """dct = dict(Suraj=7,Mohan = 23)
 print(dct)"""
+
+
+"""dct1 = {
+    1:"Suraj",
+    2:"Manu",
+    3:"Nags",
+    4:"Sam"
+}
+
+dct1.pop(4)
+del dct1[1]
+print(dct1)"""
