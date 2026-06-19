@@ -33,3 +33,15 @@ else:
 
 set1.clear()
 print(set1)"""
+
+
+
+"""# Deep Copy full elements from both sets 
+# shallow copy only present elements [Copy()]
+set1 = {1,2,3}
+set2 = set1.copy()
+
+set2.add(4)
+
+print(set1)
+print(set2)"""
