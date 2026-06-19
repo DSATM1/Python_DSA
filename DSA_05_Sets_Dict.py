@@ -68,3 +68,10 @@ print(set2-set1)
 print(set1.difference(set2))
 print(set2.difference(set1))"""
 
+
+
+"""set1 = {1,8,7,2,4}
+set2 = {8,2,9,6}
+#union - intersection
+print(set1^set2)
+print(set1.symmetric_difference(set2))"""
