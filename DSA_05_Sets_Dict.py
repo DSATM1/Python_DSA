@@ -126,3 +126,23 @@ print(dct)"""
 dct1.pop(4)
 del dct1[1]
 print(dct1)"""
+
+"""dct1 = {
+    1:"Suraj",
+    2:"Manu",
+    3:"Nags",
+    4:"Sam"
+}
+
+print(dct1.items())
+for key,value in dct1.items():
+    print(key,value)
+
+for key in dct1.keys():
+    print(key,end=" ")
+
+for key in dct1.items():
+    print(key,end=" ")
+
+for value in dct1.values():
+    print(value,end=" ")"""
