@@ -75,3 +75,15 @@ set2 = {8,2,9,6}
 #union - intersection
 print(set1^set2)
 print(set1.symmetric_difference(set2))"""
+
+
+"""dict1 = {
+    1:"Name",
+    "Hello":100,
+    10.25:"Float",
+    "Bool":True
+}
+
+print(dict1)
+print(len(dict1))
+print(type(dict1))"""
