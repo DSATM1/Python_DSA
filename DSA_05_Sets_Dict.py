@@ -16,3 +16,10 @@ set1 = set(list1)
 print(len(set1))
 print(set1)"""
 
+"""set1 = {"Suraj",23,"Age",100,"Lucifer"}
+set1.add(100)
+set1.add("SP")
+set1.discard("Age")
+
+set1.remove("SP")
+print(set1)"""
