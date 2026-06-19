@@ -94,3 +94,20 @@ print(type(dict1))"""
     "Name":"String"
 }
 print(dct["Name"])"""
+
+
+
+"""dct1 = {
+    1:"Suraj",
+    2:"Manu",
+    3:"Nags",
+    4:"Sam"
+}
+
+dct1[5] = "Sam"  # Key should be unique not the value 
+
+dct1.update({
+    1:"SP",
+    6:"Rohan"
+})
+print(dct1)"""
