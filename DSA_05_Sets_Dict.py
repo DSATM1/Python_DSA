@@ -156,3 +156,14 @@ for name in lst:
     else:
         freq[name] += 1
 print(freq)"""
+
+"""s = " Suraj is Practicing for Job by self learnig "
+
+freq = {}
+
+for i in s:
+    if i not in freq:
+        freq[i] = 1
+    else:
+        freq[i] += 1
+print(freq)"""
