@@ -87,3 +87,10 @@ print(set1.symmetric_difference(set2))"""
 print(dict1)
 print(len(dict1))
 print(type(dict1))"""
+
+
+"""dct = {
+    (1,2,3):"Tuple",
+    "Name":"String"
+}
+print(dct["Name"])"""
