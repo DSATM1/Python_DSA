@@ -111,3 +111,6 @@ dct1.update({
     6:"Rohan"
 })
 print(dct1)"""
+
+"""dct = dict(Suraj=7,Mohan = 23)
+print(dct)"""
