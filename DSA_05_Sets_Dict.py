@@ -146,3 +146,13 @@ for key in dct1.items():
 
 for value in dct1.values():
     print(value,end=" ")"""
+
+"""lst = ["Suraj","Kushal","Suman","Raghu","Deepak","Kushal","Suraj","suraj","Deepak"]
+
+freq= {}
+for name in lst:
+    if name not in freq:
+        freq[name] = 1
+    else:
+        freq[name] += 1
+print(freq)"""
