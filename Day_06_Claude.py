@@ -69,3 +69,20 @@ def lcm(a,b):
 print(gcd(10,15))
 print(lcm(10,15))"""
 
+"""def decimal_to_binary(n):
+    if n == 0:
+        return "0"
+
+    binary = ""
+
+    while n > 0:
+        remainder = n % 2
+        binary = str(remainder) + binary
+        n = n // 2
+
+    return binary
+
+
+num = int(input("Enter decimal number: ").strip())
+
+print(decimal_to_binary(num))"""
