@@ -86,3 +86,18 @@ print(lcm(10,15))"""
 num = int(input("Enter decimal number: ").strip())
 
 print(decimal_to_binary(num))"""
+
+
+"""def count_occurrences(lst, target):
+    count = 0
+
+    for item in lst:
+        if item == target:
+            count = count + 1
+
+    return count
+
+
+print(count_occurrences([1, 2, 2, 3, 2], 2))
+print(count_occurrences(["a", "b", "a", "c"], "a"))
+print(count_occurrences([1, 2, 5, 5, 2], 5))"""
