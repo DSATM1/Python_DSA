@@ -39,3 +39,14 @@ while attempts > 0:
             print(f"❌ Wrong! {attempts} attempts left.")
         else:
             print("🔒 Account locked!")"""
+
+
+"""def gcd(a,b):
+    if b==0:
+        return a
+    return gcd(b, a%b)
+
+def lcm(a,b):
+    return a*b//gcd(a,b)
+print(gcd(10,15))
+print(lcm(10,15))"""
