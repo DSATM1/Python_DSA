@@ -22,7 +22,6 @@
     else:
         return False
 
-
 correct_password = "Tiger@123"
 attempts = 3
 
@@ -30,6 +29,25 @@ while attempts > 0:
     pwd = input("Enter password: ").strip()
 
     if password_validator(pwd) and pwd == correct_password:
+        print("✅ Access granted!")
+        break
+    else:
+        attempts -= 1
+
+        if attempts > 0:
+            print(f"❌ Wrong! {attempts} attempts left.")
+        else:
+            print("🔒 Account locked!")"""
+
+
+# Another way of PWD checker
+"""correct_password = "tiger123"
+attempts = 3
+
+while attempts > 0:
+    pwd = input("Enter password: ").strip()
+
+    if pwd == correct_password:
         print("✅ Access granted!")
         break
     else:
@@ -50,3 +68,4 @@ def lcm(a,b):
     return a*b//gcd(a,b)
 print(gcd(10,15))
 print(lcm(10,15))"""
+
