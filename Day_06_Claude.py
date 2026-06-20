@@ -115,3 +115,13 @@ print(count_occurrences([1, 2, 5, 5, 2], 5))"""
 n = int(input("Enter n: ").strip())
 
 print(sum_of_squares_loop(n))"""
+
+
+
+def sum_of_squares_list_comprehension(n):
+    return sum([i * i for i in range(1, n + 1)])
+
+
+n = int(input("Enter n: ").strip())
+
+print(sum_of_squares_list_comprehension(n))
