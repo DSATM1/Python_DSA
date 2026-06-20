@@ -117,11 +117,31 @@ n = int(input("Enter n: ").strip())
 print(sum_of_squares_loop(n))"""
 
 
-
-def sum_of_squares_list_comprehension(n):
+"""def sum_of_squares_list_comprehension(n):
     return sum([i * i for i in range(1, n + 1)])
 
 
 n = int(input("Enter n: ").strip())
 
-print(sum_of_squares_list_comprehension(n))
+print(sum_of_squares_list_comprehension(n))"""
+
+
+
+"""def find_unique_pairs(lst, target):
+    seen = set()
+    pairs = set()
+
+    for num in lst:
+        needed = target - num
+
+        if needed in seen:
+            pair = tuple(sorted((num, needed)))
+            pairs.add(pair)
+
+        seen.add(num)
+
+    return list(pairs)
+
+
+print(find_unique_pairs([1, 5, 7, -1, 5], 6))
+print(find_unique_pairs([1, 2, 3, 4, 5, 6], 7))"""
