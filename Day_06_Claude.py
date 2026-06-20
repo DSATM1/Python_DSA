@@ -145,3 +145,32 @@ print(sum_of_squares_list_comprehension(n))"""
 
 print(find_unique_pairs([1, 5, 7, -1, 5], 6))
 print(find_unique_pairs([1, 2, 3, 4, 5, 6], 7))"""
+
+
+"""def longest_consecutive(lst):
+    if len(lst) == 0:
+        return 0
+
+    lst.sort()
+    print("Sorted :", lst)
+
+    current_count = 1
+    max_count = 1
+
+    for i in range(1, len(lst)):
+        if lst[i] == lst[i - 1] + 1:
+            current_count = current_count + 1
+        else:
+            current_count = 1
+
+        if current_count > max_count:
+            max_count = current_count
+
+    return max_count
+
+
+lst = [2, 1, 3, 10, 4, 20, 5]
+
+result = longest_consecutive(lst)
+
+print("Longest consecutive sequence :", result)"""
