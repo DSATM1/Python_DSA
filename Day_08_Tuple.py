@@ -27,3 +27,12 @@ print(nums.index(3)) # 3 — index of first 3
 print(sum(nums)) # 12 — built-in sum() 
 print(max(nums)) # 4 — built-in max() # Cannot modify! 
 nums[0] = 2 # ❌ TypeError!"""
+
+###### ----- Sets ------- #######
+
+"""colors = {"red", "green", "blue"} # set with items 
+unique = set([1, 2, 2, 3, 3, 3]) # removes duplicates → {1, 2, 3} 
+empty = set() # empty set (NOT {}) 
+print(len(colors)) # 3 
+print(type(colors)) # <class 'set'> 
+print(unique) # {1, 2, 3}"""
