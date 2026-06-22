@@ -36,3 +36,18 @@ empty = set() # empty set (NOT {})
 print(len(colors)) # 3 
 print(type(colors)) # <class 'set'> 
 print(unique) # {1, 2, 3}"""
+
+
+"""colors = {"red", "green", "blue"} # Add & Remove 
+colors.add("yellow") # {red, green, blue, yellow} 
+colors.remove("red") # {green, blue, yellow} 
+colors.discard("purple") # no error if item missing 
+colors.pop() # remove any item # Checking membership (super fast!) 
+print("green" in colors) # True ← O(1) speed! 
+print("red" in colors) # False # Set math operations 
+a = {1, 2, 3, 4} 
+b = {3, 4, 5, 6} 
+print(a | b) # {1, 2, 3, 4, 5, 6} — union (OR) 
+print(a & b) # {3, 4} — intersection (AND) 
+print(a - b) # {1, 2} — difference 
+print(a ^ b) # {1, 2, 5, 6} — symmetric difference"""
