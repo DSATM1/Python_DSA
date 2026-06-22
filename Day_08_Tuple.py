@@ -53,6 +53,10 @@ print(a - b) # {1, 2} — difference
 print(a ^ b) # {1, 2, 5, 6} — symmetric difference"""
 
 
+
+###### ----Dictionaries----- #######
+
+
 """student = { 
     "name": "Suraj", 
     "age": 23, 
@@ -63,3 +67,13 @@ empty = {}
 from_list = dict([("a", 1), ("b", 2)]) # from list of pairs 
 print(len(student)) # 4 
 print(type(student)) # <class 'dict'>"""
+
+
+
+"""student = {"name": "Suraj", "age": 23, "cgpa": 8.52} # Using keys 
+print(student["name"]) # Suraj 
+print(student["age"]) # 23 
+print(student["cgpa"]) # ❌ KeyError! # Safe access with .get() 
+print(student.get("name")) # Suraj 
+print(student.get("city")) # None (no error!) 
+print(student.get("city", "Unknown")) # Unknown (default value)"""
