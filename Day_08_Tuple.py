@@ -116,3 +116,6 @@ if "name" in student:
 print(school["location"]) # Bengaluru 
 print(school["students"][0]["name"]) # Suraj 
 print(school["courses"]["python"]) # 30"""
+
+"""student = {"name": "Suraj", "age": 23}
+print(student.get("cgpa"))"""
