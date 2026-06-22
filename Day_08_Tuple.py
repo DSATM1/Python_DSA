@@ -114,6 +114,23 @@ for value in student.values():
 if "name" in student: 
     print("Name found!")"""
 
+# Create a dictionary for your own student profile (name, age, cgpa, college, city). 
+# Print each key-value using .items() loop.
+"""stud_info = {
+    "Name":"Suraj",
+    "Age" : 24,
+    "CGPA" : 8.5,
+    "College":"DSATM",
+    "City":"Sira"
+}
+for key,value in stud_info.items():
+    print(f"{key}:{value}")"""
+
+# for v in stud_info.values():
+#     print(v)
+
+# for key in stud_info:
+#     print(key)
 
 
 """school = { 
