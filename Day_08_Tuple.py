@@ -87,3 +87,15 @@ student["city"] # delete by key
 print(student) # {"name": "Suraj", "cgpa": 8.52}
 student.pop("age") # remove & return value 
 student.clear() # remove all """
+
+
+
+"""student = {"name": "Suraj", "age": 23, "cgpa": 8.52} # Keys only 
+for key in student: 
+    print(key) # name, age, cgpa # Keys and values 
+for key, value in student.items(): 
+    print(f"{key} = {value}") # name = Suraj, etc. # Values only 
+for value in student.values(): 
+    print(value) # Suraj, 23, 8.52 # Check if key exists 
+if "name" in student: 
+    print("Name found!")"""
