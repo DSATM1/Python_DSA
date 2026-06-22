@@ -139,7 +139,7 @@ for key,value in stud_info.items():
         {"name": "Putta", "marks": 92} 
     ], 
         "location": "Bengaluru", 
-        "courses": { "python": 30, 
+        "courses": {"python": 30, 
                     "dsa": 45, 
                     "databases": 25 
                     }
@@ -150,3 +150,11 @@ print(school["courses"]["python"]) # 30"""
 
 """student = {"name": "Suraj", "age": 23}
 print(student.get("cgpa"))"""
+
+
+"""def count_word(sent):                      #type:ignore
+    count = {}
+    for word in sent.split():                 #type:ignore
+        count[word] = count.get(word,0)+1     #type:ignore
+    return count                              #type:ignore
+print(count_word("the cat sat on the cat"))   #type:ignore"""
