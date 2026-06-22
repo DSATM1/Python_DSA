@@ -77,3 +77,13 @@ print(student["cgpa"]) # ❌ KeyError! # Safe access with .get()
 print(student.get("name")) # Suraj 
 print(student.get("city")) # None (no error!) 
 print(student.get("city", "Unknown")) # Unknown (default value)"""
+
+
+"""student = {"name": "Suraj", "age": 23} # Add new key-value 
+student["city"] = "Bengaluru" 
+student["cgpa"] = 8.52 # Update existing 
+student["age"] = 24 # Remove del 
+student["city"] # delete by key 
+print(student) # {"name": "Suraj", "cgpa": 8.52}
+student.pop("age") # remove & return value 
+student.clear() # remove all """
