@@ -9,3 +9,14 @@ print(rgb)
 print(mixed)
 print(single)
 print(empty)"""
+
+
+"""point = (10, 20) 
+print(point[0]) # 10 — index like lists 
+print(point[-1]) # 20 — negative index works 
+x, y = point # unpack: 
+x=10 
+y=20 
+print(f"Point: {x}, {y}") 
+a, b, c = (1, 2, 3) # unpack 3 values at once 
+print(a, b, c) # 1 2 3"""
