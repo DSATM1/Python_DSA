@@ -34,3 +34,18 @@ dsa_applicants = {"Ravi","Kiran","Meena","Arjun"}
 print(f"Both courses     : {python_applicants & dsa_applicants}")
 print(f"Only Python      : {python_applicants - dsa_applicants}")
 print(f"Total applicants : {len(python_applicants | dsa_applicants)} unique students")"""
+
+"""phone_book = {
+    "Suraj"   :1,
+    "Mohan"   :2,
+    "Muruli"  :3,
+    "Prajwal" :4,
+    "Likith"  :5
+    }
+
+name = input("enter the name").strip()
+result = phone_book.get(name)
+if result:
+    print(result)
+else:
+    print("Contact Not Found")"""
