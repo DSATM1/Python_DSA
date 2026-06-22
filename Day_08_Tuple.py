@@ -51,3 +51,15 @@ print(a | b) # {1, 2, 3, 4, 5, 6} — union (OR)
 print(a & b) # {3, 4} — intersection (AND) 
 print(a - b) # {1, 2} — difference 
 print(a ^ b) # {1, 2, 5, 6} — symmetric difference"""
+
+
+"""student = { 
+    "name": "Suraj", 
+    "age": 23, 
+    "cgpa": 8.52, 
+    "college": "DSATM" 
+    } 
+empty = {} 
+from_list = dict([("a", 1), ("b", 2)]) # from list of pairs 
+print(len(student)) # 4 
+print(type(student)) # <class 'dict'>"""
