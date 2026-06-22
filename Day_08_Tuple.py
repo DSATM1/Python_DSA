@@ -46,6 +46,12 @@ print(type(colors)) # <class 'set'>
 print(unique) # {1, 2, 3}"""
 
 
+# lst = [1, 2, 2, 3, 4, 4, 4, 5] convert this to set()
+"""unique = set([1, 2, 2, 3, 4, 4, 4, 5])
+print(f"3 is present  : {3 in unique}")
+print(f"Unique Count  : {len(unique)}")
+print(f"Unique Values : {unique}")"""
+
 """colors = {"red", "green", "blue"} # Add & Remove 
 colors.add("yellow") # {red, green, blue, yellow} 
 colors.remove("red") # {green, blue, yellow} 
