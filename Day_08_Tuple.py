@@ -21,6 +21,14 @@ print(f"Point: {x}, {y}")
 a, b, c = (1, 2, 3) # unpack 3 values at once 
 print(a, b, c) # 1 2 3"""
 
+
+# Create a tuple of 5 city names. Unpack first 2 into variables. Print total count.
+"""city = ("Bangalore","Mahismati","Afghan Trading Company","Khansaar","KGF")
+Total = f1,f2 = city[0],city[1]
+print(f"First 2 Unpack {f1} and {f2}")
+print(f"Total Count of Unpack variable = {len(Total)}\nTotal Count of city = {len(city)}")"""
+
+
 """nums = (1, 2, 2, 3, 2, 4) 
 print(nums.count(2)) # 3 — count occurrences 
 print(nums.index(3)) # 3 — index of first 3 
