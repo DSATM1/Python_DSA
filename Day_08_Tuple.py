@@ -20,3 +20,10 @@ y=20
 print(f"Point: {x}, {y}") 
 a, b, c = (1, 2, 3) # unpack 3 values at once 
 print(a, b, c) # 1 2 3"""
+
+"""nums = (1, 2, 2, 3, 2, 4) 
+print(nums.count(2)) # 3 — count occurrences 
+print(nums.index(3)) # 3 — index of first 3 
+print(sum(nums)) # 12 — built-in sum() 
+print(max(nums)) # 4 — built-in max() # Cannot modify! 
+nums[0] = 2 # ❌ TypeError!"""
