@@ -23,7 +23,6 @@ print(sortArray([32,43,1,56,98,9,32312,787,112,9866]))"""
 
 
 # Insertion Sort
-
 """def sortArray(nums):
         n = len(nums)
 
@@ -38,3 +37,24 @@ print(sortArray([32,43,1,56,98,9,32312,787,112,9866]))"""
         return nums
 
 print(sortArray([89,43,12,56,78,32]))"""
+
+
+# Selection Sort
+"""def sortArray(nums):
+        n = len(nums)
+
+        for i in range(n):
+            mn = nums[i]
+            ind = i
+            for j in range(i+1, n):
+                if nums[j] < mn:
+                    mn = nums[j]
+                    ind = j 
+
+            temp = nums[i]
+            nums[i] = nums[ind]
+            nums[ind] = temp 
+        
+        return nums
+
+print(sortArray([45,21,1,0,90,65,87,91]))"""
