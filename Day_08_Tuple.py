@@ -99,3 +99,20 @@ for value in student.values():
     print(value) # Suraj, 23, 8.52 # Check if key exists 
 if "name" in student: 
     print("Name found!")"""
+
+
+
+"""school = { 
+    "students": [ 
+        {"name": "Suraj", "marks": 85}, 
+        {"name": "Putta", "marks": 92} 
+    ], 
+        "location": "Bengaluru", 
+        "courses": { "python": 30, 
+                    "dsa": 45, 
+                    "databases": 25 
+                    }
+} # Access nested data 
+print(school["location"]) # Bengaluru 
+print(school["students"][0]["name"]) # Suraj 
+print(school["courses"]["python"]) # 30"""
