@@ -43,3 +43,21 @@ for dept,name in result.items():
 # print(f"MCA : {result["MCA"]}")
 # print(f"BCA : {result["BCA"]}")
 # print(f"MBA : {result["MBA"]}")"""
+
+
+
+# two_sum([2,7,11,15], 9)  → [0, 1]
+# two_sum([3,2,4], 6)      → [1, 2]
+# two_sum([1,2,3], 10)     → None
+
+"""def two_sum(nums,target):
+    n = len(nums)
+    dct = {}
+    for i in range(n):
+        rem = target - nums[i]
+        if rem in dct:
+            return [dct[rem],i]
+        dct[nums[i]] = i
+print(two_sum([2,7,11,15], 9))
+print(two_sum([3,2,4], 6))
+print(two_sum([1,2,3], 10))"""
