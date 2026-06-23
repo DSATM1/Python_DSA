@@ -156,3 +156,21 @@ print_report(students = {
     "Putta": {"python": 78, "dsa": 80, "sql": 75, "ml": 82, "os": 80},
     "Ravi" : {"python": 95, "dsa": 92, "sql": 90, "ml": 88, "os": 95}
 }  )"""
+
+
+
+
+# Top K Frequent Elements (LeetCode #347!)
+# Given a list of numbers, find the K most frequently appearing elements. 
+# Return in order of frequency!
+# top_k([1,1,1,2,2,3], k=2)       → [1, 2]
+# top_k([1,2,3,4,5,5,5,4,4], k=2) → [5, 4]
+"""def topKFrequent(nums, k):
+    count = {}
+    for i in nums:
+        count[i] = count.get(i,0)+1
+    sot = sorted(count, key=lambda x: count[x], reverse=True)
+    return sot[:k]
+print(topKFrequent([1,1,1,2,2,3], 2))
+print(topKFrequent([1,2,3,4,5,5,5,4,4], 2))"""
+
