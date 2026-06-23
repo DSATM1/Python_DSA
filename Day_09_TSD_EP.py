@@ -61,3 +61,16 @@ for dept,name in result.items():
 print(two_sum([2,7,11,15], 9))
 print(two_sum([3,2,4], 6))
 print(two_sum([1,2,3], 10))"""
+
+
+
+# {"a":1, "b":2}  →  {1:"a", 2:"b"}
+# for dept,name in result.items():
+#      print(f"{dept} : {name}")
+
+"""def inverted_dct(dct):
+    inverted = {}
+    for key,value in dct.items():
+        inverted [value] =key
+    return inverted
+print(inverted_dct({"a":1,"b":2}))"""
