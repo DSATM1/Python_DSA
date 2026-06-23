@@ -74,3 +74,52 @@ print(two_sum([1,2,3], 10))"""
         inverted [value] =key
     return inverted
 print(inverted_dct({"a":1,"b":2}))"""
+
+
+# Anagram Checker
+# "listen" → frequency dict → {'l':1, 'i':1, 's':1, 't':1, 'e':1, 'n':1}
+# "silent" → frequency dict → {'s':1, 'i':1, 'l':1, 'e':1, 'n':1, 't':1}
+
+#-----Approach 1-------
+"""def is_anagram(s,t):
+    if len(s) != len(t):
+        return False 
+    freq = {}
+    for i in s:
+        if i not in freq:
+            freq[i] = 1
+        else:
+            freq[i] += 1
+    
+    for i in t:
+        if i not in freq:
+            return False
+        else:
+            freq[i] -= 1
+
+    for i in freq.values():
+        if i != 0:
+            return False
+    return True 
+
+print(is_anagram("listen","silent"))"""
+
+#-----Approach 2-----------
+"""def is_anagram(s, t):
+    s = s.lower().replace(" ", "")
+    t = t.lower().replace(" ", "")
+    freq = {}
+    for ch in s:
+        freq[ch] = freq.get(ch, 0) + 1
+    for ch in t:
+        freq[ch] = freq.get(ch, 0) - 1
+    return all(v == 0 for v in freq.values())
+
+print(is_anagram("listen","silent"))"""
+
+#---------Approach 3-------------
+"""def is_anagram(s, t):
+    s = s.lower().replace(" ", "")
+    t = t.lower().replace(" ", "")
+    return sorted(s) == sorted(t)   # one line!
+print(is_anagram("listen","silent"))"""
