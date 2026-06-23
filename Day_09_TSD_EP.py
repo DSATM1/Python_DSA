@@ -123,3 +123,36 @@ print(is_anagram("listen","silent"))"""
     t = t.lower().replace(" ", "")
     return sorted(s) == sorted(t)   # one line!
 print(is_anagram("listen","silent"))"""
+
+
+
+# Build a nested dict for 3 students with subject marks. 
+# Write functions to get total, average, grade. Print full report!
+# ===== Report Card =====
+# Suraj | Total: 440 | Avg: 88.00 | Grade: A
+# Putta | Total: 395 | Avg: 79.00 | Grade: B
+# Ravi  | Total: 460 | Avg: 92.00 | Grade: A+
+
+"""def get_grade(avg):
+    if avg >= 90:
+        return "A+"
+    elif avg >= 80: 
+        return "A"
+    elif avg >= 70: 
+        return "B"
+    elif avg >= 60: 
+        return "C"
+    else:       
+        return "F"
+def print_report(students):
+    for name,subjects in students.items():
+        total = sum(subjects.values())
+        avg = total/len(subjects)
+        grade = get_grade(avg)
+        print(f"{name} | Total: {total} | Avg: {avg:.2f} | Grade: {grade}")
+
+print_report(students = {
+    "Suraj": {"python": 90, "dsa": 88, "sql": 92, "ml": 85, "os": 85},
+    "Putta": {"python": 78, "dsa": 80, "sql": 75, "ml": 82, "os": 80},
+    "Ravi" : {"python": 95, "dsa": 92, "sql": 90, "ml": 88, "os": 95}
+}  )"""
