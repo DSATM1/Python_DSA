@@ -19,3 +19,17 @@ while n>=10:
     step += 1
 
 print(f"Digital Root : {n}")"""
+
+"""class Mobile:
+    def __init__(self,brand,price):
+        self.brand = brand
+        self.price = price
+
+    def display(self):
+        print(f"{self.brand} costs {self.price}")
+
+m1 = Mobile("moto",10000)
+m2 = Mobile("Vivo",14500)
+
+m1.display()
+m2.display()"""
