@@ -16,3 +16,31 @@
 
 unique = duplicates([1, 3, 4, 2, 2, 3, 5, 4, 4])
 print(sorted(unique))"""
+
+
+# Write a function word_frequency(sentence) that takes a sentence string and returns a dictionary 
+# with each word as the key and its frequency as the value.
+
+# Input:  "the cat sat on the mat the cat"
+# Output: {'the': 3, 'cat': 2, 'sat': 1, 'on': 1, 'mat': 1}
+
+"""def count_word(sent):                              #type:ignore
+    count = {}
+    for word in sent.split():                         #type:ignore
+        count[word] = count.get(word,0)+1             #type:ignore
+    return count                                      #type:ignore
+print(count_word("the cat sat on the mat the cat"))   #type:ignore"""
+
+
+# Write a function are_anagrams(s1, s2) that returns True if two 
+# strings are anagrams of each other. Ignore case and spaces.
+
+# "listen",     "silent"      → True
+# "hello",      "world"       → False
+# "Astronomer", "Moon starer" → True
+
+"""def is_anagram(s, t):
+    s = s.lower().replace(" ", "")
+    t = t.lower().replace(" ", "")
+    return sorted(s) == sorted(t)   # one line!
+print(is_anagram("listen","silent"))"""
