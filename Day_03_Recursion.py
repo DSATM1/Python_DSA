@@ -17,6 +17,8 @@ printNum(0,5)"""
     return n*fact(n-1)
 print(fact(5))"""
 
+
+#----GCD-----
 """def gcd(a,b):
     if b==0:
         return a
