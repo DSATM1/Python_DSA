@@ -15,3 +15,16 @@
 
 # first valu is greater 
 
+"""def second_larg(numbers):
+    largest = 0
+    second_largest = 0
+    #largest = numbers[0]
+    for num in numbers:
+        if num >= largest:
+            second_largest = largest
+            largest = num
+        elif num >= second_largest:
+            second_largest = num
+    return second_largest
+
+print(second_larg([51,13,15,61,7]))"""
