@@ -15,6 +15,13 @@
 
 # first valu is greater 
 
+# read = 19->5->13->15->7->6
+
+# largest = 19->19->19->19->19->19
+
+# sec_larg =  0->5->13->15->15->15
+
+
 """def second_larg(numbers):
     largest = 0
     second_largest = 0
