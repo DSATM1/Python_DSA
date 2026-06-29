@@ -47,11 +47,9 @@ from typing import List
 # For now, it returns -1 so ALL tests will FAIL.
 # =========================================================
 def max_profit_one_transaction(prices: List[int]) -> int:
-    """
-    Return the maximum profit possible with at most ONE buy and ONE sell.
+    """"""Return the maximum profit possible with at most ONE buy and ONE sell.
     - You must buy before you sell.
-    - If no profit is possible, return 0.
-    """
+    - If no profit is possible, return 0.""""""
     min_price = prices[0]
     max_profit = 0 
     length = len(prices)
