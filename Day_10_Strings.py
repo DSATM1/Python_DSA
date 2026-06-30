@@ -56,7 +56,7 @@ print(is_palindrome("racecar"))                     # True
 print(is_palindrome("hello"))                       # False
 print(is_palindrome("A man a plan a canal Panama")) # True"""
 
-def two_sum(nums, target):
+"""def two_sum(nums, target):
     left = 0
     right = len(nums) - 1
 
@@ -73,4 +73,4 @@ def two_sum(nums, target):
             right -= 1
 print(two_sum([2, 7, 11, 15], 9))
 print(two_sum([2, 3, 4], 6))
-print(two_sum([1, 4, 6, 9], 10))
+print(two_sum([1, 4, 6, 9], 10))"""
