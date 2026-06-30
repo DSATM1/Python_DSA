@@ -81,7 +81,7 @@ grades = {
     "Arjun": {"Maths": 76, "Science": 85, "English": 90},
     "Priya": {"Maths": 95, "Science": 88, "English": 84},
 }
-
+"""
 # Function 1: Calculate average marks of a student
 def get_average(name, grades):
     marks = grades[name].values()
@@ -124,4 +124,4 @@ print("Average of Suraj:", get_average("Suraj", grades))
 print("Class Topper:", class_topper(grades))
 print("Maths Topper:", subject_topper("Maths", grades))
 print("Science Topper:", subject_topper("Science", grades))
-print("English Topper:", subject_topper("English", grades))
+print("English Topper:", subject_topper("English", grades))"""
