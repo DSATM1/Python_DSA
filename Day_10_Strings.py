@@ -74,3 +74,54 @@ print(is_palindrome("A man a plan a canal Panama")) # True"""
 print(two_sum([2, 7, 11, 15], 9))
 print(two_sum([2, 3, 4], 6))
 print(two_sum([1, 4, 6, 9], 10))"""
+
+
+grades = {
+    "Suraj": {"Maths": 88, "Science": 92, "English": 79},
+    "Arjun": {"Maths": 76, "Science": 85, "English": 90},
+    "Priya": {"Maths": 95, "Science": 88, "English": 84},
+}
+
+# Function 1: Calculate average marks of a student
+def get_average(name, grades):
+    marks = grades[name].values()
+    average = sum(marks) / len(marks)
+    return round(average, 2)
+
+
+# Function 2: Find the class topper
+def class_topper(grades):
+    topper = ""
+    highest_average = 0
+
+    for student in grades:
+        avg = get_average(student, grades)
+
+        if avg > highest_average:
+            highest_average = avg
+            topper = student
+
+    return topper
+
+
+# Function 3: Find the topper in a subject
+def subject_topper(subject, grades):
+    topper = ""
+    highest_marks = 0
+
+    for student in grades:
+        marks = grades[student][subject]
+
+        if marks > highest_marks:
+            highest_marks = marks
+            topper = student
+
+    return topper
+
+
+# Testing
+print("Average of Suraj:", get_average("Suraj", grades))
+print("Class Topper:", class_topper(grades))
+print("Maths Topper:", subject_topper("Maths", grades))
+print("Science Topper:", subject_topper("Science", grades))
+print("English Topper:", subject_topper("English", grades))
