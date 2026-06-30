@@ -55,3 +55,22 @@ print(is_anagram("listen","silent"))"""
 print(is_palindrome("racecar"))                     # True
 print(is_palindrome("hello"))                       # False
 print(is_palindrome("A man a plan a canal Panama")) # True"""
+
+def two_sum(nums, target):
+    left = 0
+    right = len(nums) - 1
+
+    while left < right:
+        current_sum = nums[left] + nums[right]
+
+        if current_sum == target:
+            return (left + 1, right + 1)   # 1-based indexing
+
+        elif current_sum < target:
+            left += 1
+
+        else:
+            right -= 1
+print(two_sum([2, 7, 11, 15], 9))
+print(two_sum([2, 3, 4], 6))
+print(two_sum([1, 4, 6, 9], 10))
