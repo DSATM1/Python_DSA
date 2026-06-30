@@ -44,3 +44,14 @@ print(count_word("the cat sat on the mat the cat"))   #type:ignore"""
     t = t.lower().replace(" ", "")
     return sorted(s) == sorted(t)   # one line!
 print(is_anagram("listen","silent"))"""
+
+
+def is_palindrome(s):
+    s = s.strip()
+    s = s.lower()
+    s = s.replace(" ","")
+    return s == s[::-1]
+
+print(is_palindrome("racecar"))                     # True
+print(is_palindrome("hello"))                       # False
+print(is_palindrome("A man a plan a canal Panama")) # True
