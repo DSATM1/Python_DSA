@@ -1371,3 +1371,274 @@ Owner: Suraj | Balance: ₹1300
 ## Space Complexity
 
 * **O(1)** — only two instance variables (`owner` and `balance`) are stored."""
+
+
+
+
+
+
+
+
+
+
+
+
+"""This problem is a classic **String Compression** question that tests:
+
+* String traversal
+* Counting consecutive characters
+* Building a new string
+* Comparing string lengths
+
+---
+
+# Approach
+
+1. If the string is empty, return it.
+2. Start from the first character.
+3. Count how many consecutive times the current character appears.
+4. Append the character and its count to the compressed string.
+5. Move to the next different character.
+6. After processing the entire string:
+
+   * If the compressed string is **shorter** than the original, return it.
+   * Otherwise, return the original string.
+
+---
+
+# Python Code
+
+```python
+def compress(s):
+    if len(s) == 0:
+        return s
+
+    compressed = ""
+    count = 1
+
+    for i in range(1, len(s)):
+        if s[i] == s[i - 1]:
+            count += 1
+        else:
+            compressed += s[i - 1] + str(count)
+            count = 1
+
+    # Add the last character group
+    compressed += s[-1] + str(count)
+
+    # Return the shorter string
+    if len(compressed) < len(s):
+        return compressed
+    else:
+        return s
+
+
+# Test Cases
+print(compress("aabcccdddd"))   # a2b1c3d4
+print(compress("abcd"))         # abcd
+print(compress("aaabaa"))       # aaabaa
+print(compress("aaaa"))         # a4
+print(compress(""))             # ""
+```
+
+---
+
+# Output
+
+```text
+a2b1c3d4
+abcd
+aaabaa
+a4
+
+```
+
+> **Note:** For `"aaabaa"`, the compressed string is `"a3b1a2"` (length 6), which is the **same length** as the original `"aaabaa"` (length 6). According to the rule *"If the compressed version is longer or equal to the original, return the original string"*, the correct output is **`"aaabaa"`**, not `"a3b1a2"`.
+
+---
+
+# Line-by-Line Explanation
+
+### Function Definition
+
+```python
+def compress(s):
+```
+
+Creates a function that accepts a string.
+
+---
+
+### Handle Empty String
+
+```python
+if len(s) == 0:
+    return s
+```
+
+If the string is empty, return it immediately.
+
+---
+
+### Initialize Variables
+
+```python
+compressed = ""
+count = 1
+```
+
+* `compressed` stores the compressed result.
+* `count` tracks consecutive occurrences.
+
+---
+
+### Traverse the String
+
+```python
+for i in range(1, len(s)):
+```
+
+Start from index `1` because we'll compare with the previous character.
+
+---
+
+### Same Character
+
+```python
+if s[i] == s[i - 1]:
+    count += 1
+```
+
+Increase the count when consecutive characters match.
+
+Example:
+
+```text
+a a a
+↑ ↑
+count = 3
+```
+
+---
+
+### Different Character
+
+```python
+else:
+    compressed += s[i - 1] + str(count)
+    count = 1
+```
+
+Store the previous character and its count, then reset the count.
+
+Example:
+
+```text
+aaa
+
+compressed = "a3"
+```
+
+---
+
+### Add the Last Group
+
+```python
+compressed += s[-1] + str(count)
+```
+
+The loop stops before adding the final group, so append it afterward.
+
+Example:
+
+```text
+dddd
+
+compressed += "d4"
+```
+
+---
+
+### Compare Lengths
+
+```python
+if len(compressed) < len(s):
+    return compressed
+else:
+    return s
+```
+
+Return the compressed string **only if it's shorter**.
+
+---
+
+# Dry Run
+
+### Input
+
+```text
+"aabcccdddd"
+```
+
+| Step  | Character | Count | Compressed |
+| ----- | --------- | ----: | ---------- |
+| Start | a         |     1 | ""         |
+| a     | a         |     2 | ""         |
+| b     | different |       | "a2"       |
+| c     | different |       | "a2b1"     |
+| c     | same      |     2 | "a2b1"     |
+| c     | same      |     3 | "a2b1"     |
+| d     | different |       | "a2b1c3"   |
+| d     | same      |     2 | "a2b1c3"   |
+| d     | same      |     3 | "a2b1c3"   |
+| d     | same      |     4 | "a2b1c3"   |
+| End   | add last  |       | "a2b1c3d4" |
+
+Compressed length = **8**
+
+Original length = **10**
+
+Return:
+
+```text
+a2b1c3d4
+```
+
+---
+
+# Another Example
+
+Input:
+
+```text
+abcd
+```
+
+Compressed:
+
+```text
+a1b1c1d1
+```
+
+Lengths:
+
+```text
+Original = 4
+Compressed = 8
+```
+
+Return:
+
+```text
+abcd
+```
+
+---
+
+# Time Complexity
+
+* **O(n)** — each character is processed once.
+
+# Space Complexity
+
+* **O(n)** — in the worst case, the compressed string may require space proportional to the input size."""
