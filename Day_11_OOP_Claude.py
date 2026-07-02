@@ -969,3 +969,405 @@ Returns:
 ## Space Complexity
 
 * **O(n)**, where `n` is the number of marks stored in the `marks` list."""
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""This problem helps you practice **Classes, Objects, Constructors (`__init__`), Instance Variables, and Methods**.
+
+---
+
+# Approach
+
+1. Create a `BankAccount` class.
+2. Initialize:
+
+   * `owner`
+   * `balance`
+3. Create `deposit(amount)` to add money to the balance.
+4. Create `withdraw(amount)` to subtract money if sufficient funds are available.
+5. Create `get_balance()` to display the owner's name and current balance.
+
+---
+
+# Python Code
+
+```python
+class BankAccount:
+
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Balance after deposit: ₹{self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds")
+        else:
+            self.balance -= amount
+            print(f"Balance after withdrawal: ₹{self.balance}")
+
+    def get_balance(self):
+        print(f"Owner: {self.owner} | Balance: ₹{self.balance}")
+
+
+# Create Object
+acc = BankAccount("Suraj", 1000)
+
+# Deposit Money
+acc.deposit(500)
+
+# Withdraw Money
+acc.withdraw(200)
+
+# Withdraw More Than Balance
+acc.withdraw(2000)
+
+# Check Balance
+acc.get_balance()
+```
+
+---
+
+# Output
+
+```text
+Balance after deposit: ₹1500
+Balance after withdrawal: ₹1300
+Insufficient funds
+Owner: Suraj | Balance: ₹1300
+```
+
+---
+
+# Line-by-Line Explanation
+
+## Create the Class
+
+```python
+class BankAccount:
+```
+
+Defines a class named `BankAccount`.
+
+---
+
+## Constructor
+
+```python
+def __init__(self, owner, balance):
+```
+
+The constructor is called automatically when an object is created.
+
+Example:
+
+```python
+acc = BankAccount("Suraj", 1000)
+```
+
+Here:
+
+* `owner = "Suraj"`
+* `balance = 1000`
+
+---
+
+## Store Owner Name
+
+```python
+self.owner = owner
+```
+
+Stores the account holder's name.
+
+Result:
+
+```text
+owner = "Suraj"
+```
+
+---
+
+## Store Balance
+
+```python
+self.balance = balance
+```
+
+Stores the starting balance.
+
+Result:
+
+```text
+balance = 1000
+```
+
+---
+
+## Deposit Method
+
+```python
+def deposit(self, amount):
+```
+
+Creates a method to deposit money.
+
+```python
+self.balance += amount
+```
+
+Adds the deposit amount to the balance.
+
+Example:
+
+```text
+Current Balance = 1000
+Deposit = 500
+
+1000 + 500 = 1500
+```
+
+---
+
+```python
+print(f"Balance after deposit: ₹{self.balance}")
+```
+
+Displays the updated balance.
+
+Output:
+
+```text
+Balance after deposit: ₹1500
+```
+
+---
+
+## Withdraw Method
+
+```python
+def withdraw(self, amount):
+```
+
+Creates a method to withdraw money.
+
+---
+
+### Check for Sufficient Balance
+
+```python
+if amount > self.balance:
+```
+
+If the withdrawal amount is greater than the current balance:
+
+```text
+Balance = 1300
+Withdraw = 2000
+```
+
+Since:
+
+```text
+2000 > 1300
+```
+
+Output:
+
+```text
+Insufficient funds
+```
+
+The balance remains unchanged.
+
+---
+
+### Successful Withdrawal
+
+```python
+else:
+```
+
+If enough balance exists:
+
+```python
+self.balance -= amount
+```
+
+Subtracts the amount.
+
+Example:
+
+```text
+Balance = 1500
+Withdraw = 200
+
+1500 - 200 = 1300
+```
+
+---
+
+```python
+print(f"Balance after withdrawal: ₹{self.balance}")
+```
+
+Displays the updated balance.
+
+Output:
+
+```text
+Balance after withdrawal: ₹1300
+```
+
+---
+
+## Get Balance Method
+
+```python
+def get_balance(self):
+```
+
+Displays the owner's name and current balance.
+
+```python
+print(f"Owner: {self.owner} | Balance: ₹{self.balance}")
+```
+
+Output:
+
+```text
+Owner: Suraj | Balance: ₹1300
+```
+
+---
+
+# Dry Run
+
+### Step 1
+
+```python
+acc = BankAccount("Suraj", 1000)
+```
+
+Object state:
+
+```text
+Owner = "Suraj"
+Balance = 1000
+```
+
+---
+
+### Step 2
+
+```python
+acc.deposit(500)
+```
+
+Calculation:
+
+```text
+1000 + 500 = 1500
+```
+
+State:
+
+```text
+Balance = 1500
+```
+
+---
+
+### Step 3
+
+```python
+acc.withdraw(200)
+```
+
+Calculation:
+
+```text
+1500 - 200 = 1300
+```
+
+State:
+
+```text
+Balance = 1300
+```
+
+---
+
+### Step 4
+
+```python
+acc.withdraw(2000)
+```
+
+Check:
+
+```text
+2000 > 1300 ✔
+```
+
+Output:
+
+```text
+Insufficient funds
+```
+
+Balance remains:
+
+```text
+1300
+```
+
+---
+
+### Step 5
+
+```python
+acc.get_balance()
+```
+
+Output:
+
+```text
+Owner: Suraj | Balance: ₹1300
+```
+
+---
+
+# Final Object State
+
+```python
+{
+    "owner": "Suraj",
+    "balance": 1300
+}
+```
+
+---
+
+## Time Complexity
+
+* `deposit(amount)`: **O(1)** — constant time.
+* `withdraw(amount)`: **O(1)** — constant time.
+* `get_balance()`: **O(1)** — constant time.
+
+## Space Complexity
+
+* **O(1)** — only two instance variables (`owner` and `balance`) are stored."""
