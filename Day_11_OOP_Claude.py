@@ -527,3 +527,445 @@ total = 100
 ## Space Complexity
 
 * **O(k)**, where `k` is the number of unique items stored in the dictionary."""
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""This problem tests your understanding of **Classes, Objects, Methods, Lists, and Conditional Statements**.
+
+---
+
+# Approach
+
+1. Create a class named `Student`.
+2. Use `__init__()` to initialize:
+
+   * `name`
+   * `marks` (an empty list)
+3. Create `add_mark(mark)` to add marks to the list.
+4. Create `get_average()` to calculate the average and round it to 2 decimal places.
+5. Create `get_grade()` to return the grade based on the average.
+
+---
+
+# Python Code
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+        self.marks = []
+
+    def add_mark(self, mark):
+        self.marks.append(mark)
+
+    def get_average(self):
+        if len(self.marks) == 0:
+            return 0
+        return round(sum(self.marks) / len(self.marks), 2)
+
+    def get_grade(self):
+        average = self.get_average()
+
+        if average >= 90:
+            return "A"
+        elif average >= 80:
+            return "B"
+        elif average >= 70:
+            return "C"
+        elif average >= 60:
+            return "D"
+        else:
+            return "F"
+
+
+# Create Object
+s = Student("Suraj")
+
+# Add Marks
+s.add_mark(88)
+s.add_mark(92)
+s.add_mark(79)
+
+# Display Results
+print("Name:", s.name)
+print("Average:", s.get_average())
+print("Grade:", s.get_grade())
+```
+
+---
+
+# Output
+
+```text
+Name: Suraj
+Average: 86.33
+Grade: B
+```
+
+---
+
+# Line-by-Line Explanation
+
+## Create Class
+
+```python
+class Student:
+```
+
+Defines a class named `Student`.
+
+---
+
+## Constructor
+
+```python
+def __init__(self, name):
+```
+
+The constructor runs automatically when a new object is created.
+
+Example:
+
+```python
+s = Student("Suraj")
+```
+
+Here:
+
+* `self` → refers to the current object.
+* `name` → `"Suraj"`.
+
+---
+
+## Store Name
+
+```python
+self.name = name
+```
+
+Stores the student's name.
+
+Example:
+
+```python
+self.name = "Suraj"
+```
+
+---
+
+## Empty Marks List
+
+```python
+self.marks = []
+```
+
+Creates an empty list for storing marks.
+
+Initially:
+
+```python
+[]
+```
+
+---
+
+## Add Marks Method
+
+```python
+def add_mark(self, mark):
+```
+
+Creates a method to add a mark.
+
+```python
+self.marks.append(mark)
+```
+
+Adds the mark to the list.
+
+Example:
+
+```python
+s.add_mark(88)
+```
+
+Marks become:
+
+```python
+[88]
+```
+
+Then:
+
+```python
+s.add_mark(92)
+```
+
+Marks become:
+
+```python
+[88, 92]
+```
+
+Finally:
+
+```python
+s.add_mark(79)
+```
+
+Marks become:
+
+```python
+[88, 92, 79]
+```
+
+---
+
+## Calculate Average
+
+```python
+def get_average(self):
+```
+
+Calculates the average marks.
+
+```python
+if len(self.marks) == 0:
+    return 0
+```
+
+If no marks exist, return `0` to avoid division by zero.
+
+---
+
+```python
+sum(self.marks)
+```
+
+Calculates the total.
+
+Example:
+
+```python
+[88, 92, 79]
+
+88 + 92 + 79 = 259
+```
+
+---
+
+```python
+len(self.marks)
+```
+
+Number of marks:
+
+```python
+3
+```
+
+---
+
+```python
+sum(self.marks) / len(self.marks)
+```
+
+Average:
+
+```python
+259 / 3 = 86.333333...
+```
+
+---
+
+```python
+round(..., 2)
+```
+
+Rounds the average to two decimal places.
+
+Result:
+
+```python
+86.33
+```
+
+---
+
+## Calculate Grade
+
+```python
+def get_grade(self):
+```
+
+Gets the student's grade based on the average.
+
+```python
+average = self.get_average()
+```
+
+Reuses the `get_average()` method instead of recalculating.
+
+---
+
+### Grade Conditions
+
+```python
+if average >= 90:
+    return "A"
+```
+
+Average **90 or above** → Grade **A**.
+
+```python
+elif average >= 80:
+    return "B"
+```
+
+Average **80–89.99** → Grade **B**.
+
+```python
+elif average >= 70:
+    return "C"
+```
+
+Average **70–79.99** → Grade **C**.
+
+```python
+elif average >= 60:
+    return "D"
+```
+
+Average **60–69.99** → Grade **D**.
+
+```python
+else:
+    return "F"
+```
+
+Average **below 60** → Grade **F**.
+
+---
+
+# Dry Run
+
+### Step 1
+
+```python
+s = Student("Suraj")
+```
+
+Object state:
+
+```python
+name = "Suraj"
+marks = []
+```
+
+---
+
+### Step 2
+
+```python
+s.add_mark(88)
+```
+
+Marks:
+
+```python
+[88]
+```
+
+---
+
+### Step 3
+
+```python
+s.add_mark(92)
+```
+
+Marks:
+
+```python
+[88, 92]
+```
+
+---
+
+### Step 4
+
+```python
+s.add_mark(79)
+```
+
+Marks:
+
+```python
+[88, 92, 79]
+```
+
+---
+
+### Step 5
+
+```python
+s.get_average()
+```
+
+Calculation:
+
+```text
+88 + 92 + 79 = 259
+259 / 3 = 86.333...
+Rounded = 86.33
+```
+
+---
+
+### Step 6
+
+```python
+s.get_grade()
+```
+
+Average:
+
+```text
+86.33
+```
+
+Condition check:
+
+```text
+86.33 >= 90 ❌
+86.33 >= 80 ✅
+```
+
+Returns:
+
+```text
+"B"
+```
+
+---
+
+## Time Complexity
+
+* `add_mark(mark)`: **O(1)** (appending to a list).
+* `get_average()`: **O(n)** (sums all marks).
+* `get_grade()`: **O(n)** because it calls `get_average()`.
+
+## Space Complexity
+
+* **O(n)**, where `n` is the number of marks stored in the `marks` list."""
