@@ -1642,3 +1642,451 @@ abcd
 # Space Complexity
 
 * **O(n)** — in the worst case, the compressed string may require space proportional to the input size."""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""This problem tests your understanding of:
+
+* **Classes & Objects**
+* **Dictionaries**
+* **Methods**
+* **Conditional Statements**
+* **Dictionary Iteration**
+
+---
+
+# Approach
+
+1. Create a `Library` class.
+2. Use a dictionary `books` where:
+
+   * **Key** = Book title
+   * **Value** = Number of available copies
+3. Implement the methods:
+
+   * `add_book(title, copies)` → Add a new book or increase existing copies.
+   * `borrow_book(title)` → Decrease copies if available.
+   * `return_book(title)` → Increase copies by 1 (or add the book if it doesn't exist).
+   * `show_available()` → Display only books with copies greater than 0.
+
+---
+
+# Python Code
+
+```python
+class Library:
+
+    def __init__(self):
+        self.books = {}
+
+    def add_book(self, title, copies):
+        if title in self.books:
+            self.books[title] += copies
+        else:
+            self.books[title] = copies
+
+    def borrow_book(self, title):
+        if title not in self.books:
+            print("Book not found")
+        elif self.books[title] == 0:
+            print(f"Sorry, {title} is not available")
+        else:
+            self.books[title] -= 1
+            print(f"You borrowed '{title}'")
+
+    def return_book(self, title):
+        if title in self.books:
+            self.books[title] += 1
+        else:
+            self.books[title] = 1
+        print(f"You returned '{title}'")
+
+    def show_available(self):
+        print("Available Books:")
+        found = False
+
+        for title, copies in self.books.items():
+            if copies > 0:
+                print(f"{title}: {copies} copies")
+                found = True
+
+        if not found:
+            print("No books available.")
+
+
+# Create Library Object
+lib = Library()
+
+# Add Books
+lib.add_book("Python Crash Course", 3)
+lib.add_book("Clean Code", 2)
+
+# Borrow Books
+lib.borrow_book("Python Crash Course")
+lib.borrow_book("Python Crash Course")
+lib.borrow_book("Python Crash Course")
+lib.borrow_book("Python Crash Course")   # No copies left
+
+# Show Available Books
+lib.show_available()
+```
+
+---
+
+# Output
+
+```text
+You borrowed 'Python Crash Course'
+You borrowed 'Python Crash Course'
+You borrowed 'Python Crash Course'
+Sorry, Python Crash Course is not available
+Available Books:
+Clean Code: 2 copies
+```
+
+Notice that **"Python Crash Course" is not shown** because its available copies are **0**.
+
+---
+
+# Line-by-Line Explanation
+
+## Constructor
+
+```python
+def __init__(self):
+    self.books = {}
+```
+
+Creates an empty dictionary.
+
+Initially:
+
+```python
+{}
+```
+
+---
+
+## Add Book
+
+```python
+def add_book(self, title, copies):
+```
+
+Adds books to the library.
+
+```python
+if title in self.books:
+    self.books[title] += copies
+else:
+    self.books[title] = copies
+```
+
+Example:
+
+```python
+lib.add_book("Python Crash Course", 3)
+```
+
+Dictionary becomes:
+
+```python
+{
+    "Python Crash Course": 3
+}
+```
+
+Adding more copies later:
+
+```python
+lib.add_book("Python Crash Course", 2)
+```
+
+Dictionary becomes:
+
+```python
+{
+    "Python Crash Course": 5
+}
+```
+
+---
+
+## Borrow Book
+
+```python
+def borrow_book(self, title):
+```
+
+### Book Doesn't Exist
+
+```python
+if title not in self.books:
+    print("Book not found")
+```
+
+Example:
+
+```python
+lib.borrow_book("Harry Potter")
+```
+
+Output:
+
+```text
+Book not found
+```
+
+---
+
+### No Copies Left
+
+```python
+elif self.books[title] == 0:
+```
+
+Example:
+
+```python
+{
+    "Python Crash Course": 0
+}
+```
+
+Output:
+
+```text
+Sorry, Python Crash Course is not available
+```
+
+---
+
+### Borrow Successfully
+
+```python
+else:
+    self.books[title] -= 1
+```
+
+Example:
+
+Before:
+
+```python
+{
+    "Python Crash Course": 3
+}
+```
+
+After borrowing:
+
+```python
+{
+    "Python Crash Course": 2
+}
+```
+
+---
+
+## Return Book
+
+```python
+def return_book(self, title):
+```
+
+If the book already exists:
+
+```python
+self.books[title] += 1
+```
+
+Otherwise:
+
+```python
+self.books[title] = 1
+```
+
+Example:
+
+Before:
+
+```python
+{
+    "Clean Code": 2
+}
+```
+
+After:
+
+```python
+{
+    "Clean Code": 3
+}
+```
+
+---
+
+## Show Available Books
+
+```python
+for title, copies in self.books.items():
+```
+
+Loops through every book.
+
+Example:
+
+```python
+{
+    "Python Crash Course": 0,
+    "Clean Code": 2
+}
+```
+
+---
+
+```python
+if copies > 0:
+```
+
+Only prints books that have at least one available copy.
+
+Output:
+
+```text
+Clean Code: 2 copies
+```
+
+The book with **0 copies** is skipped.
+
+---
+
+# Dry Run
+
+### Step 1
+
+```python
+lib = Library()
+```
+
+Books:
+
+```python
+{}
+```
+
+---
+
+### Step 2
+
+```python
+lib.add_book("Python Crash Course", 3)
+```
+
+```python
+{
+    "Python Crash Course": 3
+}
+```
+
+---
+
+### Step 3
+
+```python
+lib.add_book("Clean Code", 2)
+```
+
+```python
+{
+    "Python Crash Course": 3,
+    "Clean Code": 2
+}
+```
+
+---
+
+### Step 4
+
+Borrow three times:
+
+```text
+3 → 2
+2 → 1
+1 → 0
+```
+
+Dictionary:
+
+```python
+{
+    "Python Crash Course": 0,
+    "Clean Code": 2
+}
+```
+
+---
+
+### Step 5
+
+Borrow again:
+
+```python
+lib.borrow_book("Python Crash Course")
+```
+
+Since copies are `0`:
+
+```text
+Sorry, Python Crash Course is not available
+```
+
+Dictionary remains unchanged.
+
+---
+
+### Step 6
+
+```python
+lib.show_available()
+```
+
+Checks each book:
+
+| Book                | Copies | Printed? |
+| ------------------- | -----: | :------: |
+| Python Crash Course |      0 |   ❌ No   |
+| Clean Code          |      2 |   ✅ Yes  |
+
+Output:
+
+```text
+Available Books:
+Clean Code: 2 copies
+```
+
+---
+
+# Time Complexity
+
+* `add_book()` → **O(1)**
+* `borrow_book()` → **O(1)**
+* `return_book()` → **O(1)**
+* `show_available()` → **O(n)**, where `n` is the number of books in the library.
+
+# Space Complexity
+
+* **O(n)**, where `n` is the number of unique book titles stored in the `books` dictionary."""
