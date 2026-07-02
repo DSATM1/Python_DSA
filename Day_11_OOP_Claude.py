@@ -10,3 +10,11 @@
 
 d = Dog("Bruno")   # create an object
 d.bark()           # → Bruno says: Woof!"""
+
+A good approach is:
+
+Convert the string to lowercase.
+Ignore spaces.
+Count the frequency of each character using a dictionary.
+Find the character with the highest frequency.
+If two characters have the same frequency, return the one that appeared first.
