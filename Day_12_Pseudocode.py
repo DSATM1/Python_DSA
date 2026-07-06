@@ -18,3 +18,18 @@ for item in lst:
 print(largest)  
 """
 
+
+###----- Pseudocode----#####
+# create empty basket
+# for each num in list:
+#     if num % 2 == 0:
+#         add num to basket    ← this line is inside the if
+# return the basket
+
+####------Code-----#####
+"""lst = [12,2,3,4,5,6,7,8,9]
+l1 = []
+for i in lst:
+    if i % 2 == 0:
+        l1.append(i) #type:ignore
+print(l1)"""
