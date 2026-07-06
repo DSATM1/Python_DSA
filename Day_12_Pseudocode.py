@@ -33,3 +33,18 @@ for i in lst:
     if i % 2 == 0:
         l1.append(i) #type:ignore
 print(l1)"""
+
+
+
+
+####------Code-----#####
+"""lst = [1,8,2,4,9]
+largest = lst[0]
+for i in lst:
+     if i > largest:
+            largest = i
+second_largest = lst[0]
+for j in lst:
+    if j > second_largest and j < largest:
+          second_largest = j 
+print(second_largest)"""
