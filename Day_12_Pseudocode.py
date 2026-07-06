@@ -1,10 +1,10 @@
 
 ###----- Pseudocode----#####
-largest = first element of list
-for each number in list:
-    if number > largest:
-        largest = number       ← update largest, not number
-return largest
+# largest = first element of list
+# for each number in list:
+#     if number > largest:
+#         largest = number       ← update largest, not number
+# return largest
 
 
 ####------Code-----#####
