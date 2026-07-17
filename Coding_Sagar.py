@@ -45,3 +45,10 @@ for i in num:
     if i == 3:
         continue
     print(i)"""
+
+"""n = [1,2,3,4,5]
+for j in n :
+    if j == 2:
+        pass
+    else:
+        print(j)"""
