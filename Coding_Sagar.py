@@ -61,3 +61,5 @@ for j in n :
         print("Valid Number")
     else:
         pass"""
+
+### ----- Strings ----- ###
