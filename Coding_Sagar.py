@@ -78,3 +78,10 @@ print(word.lower())
 print(word.upper())
 print(word[9:-3])
 print(word[::-1])"""
+
+
+"""user = input("Enter YES to Confirm:")
+if user.upper() == "YES":
+    print("Confirmed")
+else:
+    print("Retry")"""
