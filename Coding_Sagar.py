@@ -63,3 +63,6 @@ for j in n :
         pass"""
 
 ### ----- Strings ----- ###
+"""d = 10
+d1 = "10"
+print(d + int(d1))"""
