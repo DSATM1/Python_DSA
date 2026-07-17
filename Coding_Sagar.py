@@ -67,7 +67,7 @@ for j in n :
 d1 = "10"
 print(d + int(d1))"""
 
-"""word = "Suraj is a Fresh Candidate"
+"""word = "   Suraj is a Fresh Candidate   "
 print("Index Position of 3 :", word[3])
 print("Total Char : ",len(word))
 print(word.split())
@@ -77,7 +77,12 @@ print(word[0:20:3])
 print(word.lower())
 print(word.upper())
 print(word[9:-3])
-print(word[::-1])"""
+print(word[::-1])
+print(word.strip())
+print(word.lstrip())
+print(word.rstrip())
+print(word.startswith("   Suraj"))
+print(word.endswith("Candidate   "))"""
 
 
 """user = input("Enter YES to Confirm:")
