@@ -136,3 +136,21 @@ for i in lst:
     count += 1
 print(index)"""
 
+
+"""lst = [10, 20, 30, 49, 56]
+target = int(input("Enter target number: "))
+found = False
+position = -1
+
+for i in range(len(lst)):
+    if lst[i] == target:
+        found = True
+        position = i
+        break
+
+if found:
+    print("Found at position", position)
+elif target < lst[0] or target > lst[-1]:
+    print("Out of range")
+else:
+    print("Not found")"""
