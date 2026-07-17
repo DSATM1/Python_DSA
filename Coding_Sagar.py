@@ -10,3 +10,17 @@ print(total)"""
 while i <= 5:
     print(i)
     i+=1"""
+
+##---Even
+"""i = 1
+while i <= 20:
+    if i % 2 != 0:
+        print(i)
+    i += 1"""
+
+##---Oddd
+"""i = 1
+while i <= 20:
+    if i % 2 != 0:
+        print(i)
+    i += 1"""
