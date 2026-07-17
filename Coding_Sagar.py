@@ -52,3 +52,12 @@ for j in n :
         pass
     else:
         print(j)"""
+
+"""while True:
+    user = input("Enter Number")
+    if user == "S":
+        break
+    elif user.isdigit():
+        print("Valid Number")
+    else:
+        pass"""
