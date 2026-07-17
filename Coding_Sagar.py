@@ -90,3 +90,9 @@ if user.upper() == "YES":
     print("Confirmed")
 else:
     print("Retry")"""
+
+"""lst = [23,43,67,89,9,12]
+total = 0
+for i in lst:
+    total += i
+print(total)"""
