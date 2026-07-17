@@ -96,3 +96,27 @@ total = 0
 for i in lst:
     total += i
 print(total)"""
+
+## --- This will print only the target but we need index position  
+"""lst = [1,2,3,4,5]
+target = 3
+result = []
+for i in lst:
+    if i == target:
+        result.append(i)
+print(result)"""
+
+## --- Now using for while loop 
+
+"""lst = [23,34,45,5,6]
+target = 5
+
+index = -1
+i = 0
+
+while i < len(lst):
+    if lst[i] == target:
+        index = i
+        break
+    i += 1
+print(index)"""
