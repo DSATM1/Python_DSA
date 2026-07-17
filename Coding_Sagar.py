@@ -120,3 +120,19 @@ while i < len(lst):
         break
     i += 1
 print(index)"""
+
+
+
+"""## --- Now using for For loop 
+lst = [1,2,3,4,5]
+target = 7
+count  = 0 
+index = "Not Found" # if user enters num which is not in the list 
+
+for i in lst:
+    if i == target:
+        index = count
+        break
+    count += 1
+print(index)"""
+
