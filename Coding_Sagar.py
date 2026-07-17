@@ -39,3 +39,9 @@ while i <= 10:
         break
     i += 1
 print("Hi")"""
+
+"""num = [1,2,3,4,5]
+for i in num:
+    if i == 3:
+        continue
+    print(i)"""
