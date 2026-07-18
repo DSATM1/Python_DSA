@@ -97,6 +97,9 @@ for i in lst:
     total += i
 print(total)"""
 
+
+
+## --- List
 ## --- This will print only the target but we need index position  
 """lst = [1,2,3,4,5]
 target = 3
@@ -154,3 +157,26 @@ elif target < lst[0] or target > lst[-1]:
     print("Out of range")
 else:
     print("Not found")"""
+
+
+
+
+"""my_list = [21,39,43,56,61,78,92,18,43,89,75,10,83,43,32]
+my_list.append(23)
+my_list.extend([2,1,3])
+# my_list.append("Yes")
+# my_list.extend("Suraj")
+# my_list.insert(3,"Shree")
+# my_list.remove("Yes")
+#my_list.sort(reverse=True)
+z = my_list.count(43)
+# z = my_list.pop()
+print(len(my_list))
+print(my_list)
+print(z)
+# print(z+100)"""
+
+"""lst = [10,20,30,40]
+l2 = lst.pop()
+print(lst)
+print(l2+100)"""
