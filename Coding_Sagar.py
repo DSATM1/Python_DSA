@@ -180,3 +180,12 @@ print(z)
 l2 = lst.pop()
 print(lst)
 print(l2+100)"""
+
+
+## -- Shallow Copy and DeepCopy
+"""import copy
+a =[1,2,[3,4]]
+v = copy.deepcopy(a)
+v[2].append(8)
+print(f"A = ",a)
+print(f"V = ",v)"""
