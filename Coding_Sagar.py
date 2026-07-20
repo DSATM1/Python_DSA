@@ -236,8 +236,13 @@ Student = {
     "Age":24,
     "Address":"AGS Layout"
 }
-print(Student)
+#print(Student)
 
 
-Student.pop("Age")
-print(Student)
+#Student.pop("Age")
+#print(Student)
+
+print(Student.keys())
+
+
+
