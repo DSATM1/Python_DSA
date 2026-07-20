@@ -189,3 +189,14 @@ v = copy.deepcopy(a)
 v[2].append(8)
 print(f"A = ",a)
 print(f"V = ",v)"""
+
+
+### --- Tuple --- ###
+"""days = ("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
+print(days)
+
+for day in days:
+    print(day)
+print(days.count("Sun"))
+print(days.index("Fri"))
+print(len(days))"""
