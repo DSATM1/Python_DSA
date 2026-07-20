@@ -222,3 +222,10 @@ s.remove(2)
 print(s)
 s.discard(5)
 print(s)"""
+
+"""fs = frozenset([1,2,1,3,4,2,1,2,3])
+#fs.add(9)
+#fs.remove(3)
+#fs.discard(4)
+# u can't do any operations in frozenset
+print(fs)"""
