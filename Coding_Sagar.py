@@ -231,23 +231,23 @@ print(s)"""
 print(fs)"""
 
 ##--Dictionary--##
-Student = {
+"""Student = {
     "name":"Suraj",
     "Age":24,
     "Address":"AGS Layout"
 }
-#print(Student)
+print(Student)
 
 
 #Student.pop("Age")
 #print(Student)
 
 print(Student.keys())
-
 print(Student["Age"])
 print(Student["name"])
 print(Student["Address"])
 
-
+for key, value in Student.items():
+    print(key,":",value)"""
 
 
