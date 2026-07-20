@@ -200,3 +200,11 @@ for day in days:
 print(days.count("Sun"))
 print(days.index("Fri"))
 print(len(days))"""
+
+### --- Set --- ###
+
+"""s = {"name","Address","PH No","Age"}
+print(type(s))
+print(s)
+# print(s[0]) not ordered"""
+
