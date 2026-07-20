@@ -208,3 +208,8 @@ print(type(s))
 print(s)
 # print(s[0]) not ordered"""
 
+"""s = {2,4,6,8,7}
+p = {1,3,5,7}
+print(s | p) # union = all from both sets
+print(s & p) # intersection = only elements in both set like 7 
+print(s - p) # extra s - p only s will consider with unique not in both set like 7 it's in both ok """
