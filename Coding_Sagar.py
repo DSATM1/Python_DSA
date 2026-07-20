@@ -213,3 +213,12 @@ p = {1,3,5,7}
 print(s | p) # union = all from both sets
 print(s & p) # intersection = only elements in both set like 7 
 print(s - p) # extra s - p only s will consider with unique not in both set like 7 it's in both ok """
+
+
+"""s = {1,2,3,4,5,6}
+s.add(9)
+print(s)
+s.remove(2)
+print(s)
+s.discard(5)
+print(s)"""
