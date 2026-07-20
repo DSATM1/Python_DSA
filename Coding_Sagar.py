@@ -231,3 +231,10 @@ print(s)"""
 print(fs)"""
 
 ##--Dictionary--##
+Student = {
+    "name":"Suraj",
+    "Age":24,
+    "Address":"AGS Layout"
+}
+
+print(Student)
