@@ -229,3 +229,5 @@ print(s)"""
 #fs.discard(4)
 # u can't do any operations in frozenset
 print(fs)"""
+
+##--Dictionary--##
