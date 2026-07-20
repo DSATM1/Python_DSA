@@ -236,5 +236,8 @@ Student = {
     "Age":24,
     "Address":"AGS Layout"
 }
+print(Student)
 
+
+Student.pop("Age")
 print(Student)
