@@ -244,5 +244,10 @@ Student = {
 
 print(Student.keys())
 
+print(Student["Age"])
+print(Student["name"])
+print(Student["Address"])
+
+
 
 
