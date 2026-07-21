@@ -257,3 +257,8 @@ for key, value in Student.items():
     return x*x
 x = sq(4)
 print(x)"""
+
+"""def student(name):
+    return name
+student("Suraj")
+# Not return anything bcz retun will use variable """
