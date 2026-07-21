@@ -288,3 +288,9 @@ print(f"Count of Even Numbers = {n}")"""
     return total
 
 print(num(2,4,6,8,10))"""
+
+## -- **kwargs -- ##
+"""def info(**details):
+    return details
+result = info(Name = ["Suraj","Shree"], Age = [24,18])
+print(result)"""
