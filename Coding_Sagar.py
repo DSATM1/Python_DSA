@@ -262,3 +262,8 @@ print(x)"""
     return name
 student("Suraj")
 # Not return anything bcz retun will use variable """
+
+
+"""def st(age):
+    return age
+print(st(24))"""
