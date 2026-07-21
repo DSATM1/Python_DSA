@@ -251,3 +251,9 @@ for key, value in Student.items():
     print(key,":",value)"""
 
 
+###--- Functions ---###
+
+"""def sq(x):
+    return x*x
+x = sq(4)
+print(x)"""
