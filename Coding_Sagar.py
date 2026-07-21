@@ -278,3 +278,13 @@ print(st(24))"""
 
 n = count_even(10)
 print(f"Count of Even Numbers = {n}")"""
+
+
+### -- *args --- ###
+"""def num(*number):
+    total = 0
+    for n in number:
+        total += n
+    return total
+
+print(num(2,4,6,8,10))"""
