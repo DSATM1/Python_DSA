@@ -267,3 +267,14 @@ student("Suraj")
 """def st(age):
     return age
 print(st(24))"""
+
+"""def count_even(x):
+    count = 0
+    for i in range(1, x+1):
+        if i % 2 == 0:
+            print(i)
+            count += 1
+    return count
+
+n = count_even(10)
+print(f"Count of Even Numbers = {n}")"""
